@@ -33,7 +33,7 @@ export default function Box({ query, userInfo, userRepos, setUserRepos }) {
             <List followers={userInfo.followers} following={userInfo.following} location={userInfo.location} />
 
         </div>
-        <Repos repos={userRepos} />
+        {userRepos.length > 1 ? <Repos repos={userRepos} /> : ''}
     </>
     )
 }
