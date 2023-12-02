@@ -17,7 +17,10 @@ function App() {
       <Hero>
         <SearchBar query={query} setQuery={setQuery} />
       </Hero>
-      <Main query={query} setUserInfo={setUserInfo} setUserRepos={setUserRepos} setLoading={setLoading}>
+      <Main query={query}
+        setUserInfo={setUserInfo}
+        setUserRepos={setUserRepos}
+        setLoading={setLoading}>
         {userInfo === '' ? 'type username to search' : loading ? <Loader /> : userInfo.message ? <NotFound /> : <Box query={query} userInfo={userInfo} userRepos={userRepos} setUserRepos={setUserRepos} />}
       </Main>
     </div>

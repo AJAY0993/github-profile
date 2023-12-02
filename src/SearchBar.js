@@ -4,6 +4,7 @@ export default function SearchBar({ query, setQuery, className = 'searchbar' }) 
         backgroundColor: '#20293A',
         padding: '1.2em 2em',
         width: '350px',
+        maxWidth: '100%',
         borderRadius: '1em',
         margin: '2em auto',
         fontSize: '',

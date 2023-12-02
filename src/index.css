@@ -61,6 +61,15 @@ main {
   align-self: flex-start;
 }
 
+@media (max-width:600px) {
+
+  .userffl,
+  .userinfo {
+    flex-direction: column;
+    gap: 1em;
+  }
+}
+
 .user-avatar {
   border: 1em solid #20293A;
   border-radius: 1em;

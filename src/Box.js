@@ -25,7 +25,8 @@ export default function Box({ query, userInfo, userRepos, setUserRepos }) {
                 <figure>
                     <img className='user-avatar' style={avatarStyle} src={userInfo.avatar_url} alt=''></img>
                     <figcaption>
-                        <h2 className='user-name'>{userInfo['login']}</h2>
+                        <h2 className='user-name'>{userInfo.login}</h2>
+                        <p>{userInfo.bio}</p>
                     </figcaption>
                 </figure>
 
